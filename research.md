@@ -9,6 +9,9 @@ numpy.ndarray.reshape()
 ⇒二次元配列にしたりする構造変化のやつ
 
 ## Keras
+### データ構造
+学習データと学習ラベルが必要  
+ラベルもOne-Hot表現
 ### models.Sequential()
 ```
 model = keras.Sequential([
@@ -45,9 +48,9 @@ Inputオブジェクトはレイヤーではないため、model.layersの一部
 Kerasの全てのレイヤーは、最初は重みがない。
 重みの形状は入力の形状に依存するため、入力で最初に呼び出されたときに重みを作成します。
 
-Sequentialモデルも同様である。
-model.weight():　重みの確認
-model.summary(): モデルの構築内容確認
+Sequentialモデルも同様である。  
+model.weight():　重みの確認  
+model.summary(): モデルの構築内容確認  
 ### loss
 https://keras.io/ja/losses/  
 categorical_crossentropy: 多クラス交差エントロピー  
